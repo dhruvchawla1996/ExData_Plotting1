@@ -11,7 +11,7 @@ hps_data <- subset(household_power_consumption, Date == as.Date("2007-02-01") | 
 png("plot1.png")
 
 ## Plot
-hist(hps_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power", ylab = "Frequency")
+hist(hps_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 
 ## Finish plotting
 dev.off()
